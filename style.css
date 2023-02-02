@@ -3,7 +3,8 @@
 
 body {
     font-family: 'Indie Flower', cursive !important;
-    background: #FDE3A7; /*CAPE HONEY*/
+    background: rgb(180,208,228);
+
     margin: 0px;
     padding: 0px;
 }
@@ -11,6 +12,8 @@ body {
 ::selection {
     background: transparent;
 }
+
+
 
 h4 {
     font-size: 26px;
@@ -21,6 +24,14 @@ h4 {
 .color1{color:#1BBC9B}/*MOUNTAIN MEADOW*/
 .color2{color:#C0392B/*TALL POPPY*/}
 
+.back {
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background: rgb(180,208,228);
+    background: linear-gradient(0deg, rgba(180,208,228,1) 2%, rgba(98,162,163,1) 47%, rgba(4,62,69,1) 92%);
+}
 
 .card {
     color: #013243; /*SHERPA BLUE*/
@@ -121,3 +132,82 @@ h4 {
 .text-right {
     text-align: right;
 }
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+}
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: 100vh;
+
+}
+
+.images {
+    width: 50%;
+}
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+#header h2 {
+    border-left: 0.0625rem solid #fff;
+    border-right: 0.0625rem solid #fff;
+    display: inline;
+    padding: 0 1rem;
+}
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+@media (min-width: 500px){
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+    #landing-text {
+        height: 100vh;
+    }
+    #landing-image {
+        height: 100vh;
+    }
+    .card {
+        width: 100px;
+        height: 200px;
+    }
+}
+@media (min-width: 700px){
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+
